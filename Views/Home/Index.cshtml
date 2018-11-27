@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DonutsAPI.Models.Donut>
+
+<h1>Donuts</h1><br /><br />
+<ul>
+    @foreach (var o in ViewBag.Donuts)
+    {
+
+<li><a href="/Home/Details?id=@o["id"]">@o["name"]</a></li>
+    }
+</ul>
+  
